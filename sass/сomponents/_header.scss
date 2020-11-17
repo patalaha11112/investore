@@ -1,0 +1,200 @@
+// Header
+.header {
+    background: $bg-gray url(../img/header-img-device.png) no-repeat bottom right;
+    margin-top: -74px;
+    padding-top: 197px;
+    padding-bottom: 122px;
+    background-position: 73% 97%;
+    background-size: 332px 584px;
+    
+    // WRP
+    &__wrp-content {
+        padding-left: 23px;
+    }
+
+    // Title
+    &__title {
+        font-weight: bold;
+        color: $text-black;
+        letter-spacing: 0.02em;
+        font-size: 60px;
+        line-height: 60px;
+        width: 770px;
+        margin-bottom: 24px;
+        span {
+            color: $text-active;
+        }
+    } 
+    // Text 
+    &__text {
+        font-size: 18px;
+        line-height: 130%;
+        color: $text-black;
+        font-weight: normal;
+        max-width: 525px;
+        width: 100%;
+        margin-bottom: 32px;
+        sup {
+            font-size: 12px;
+        }
+    }
+    &__text-under {
+        font-size: 14px;
+        line-height: 23px;
+        color: $text-black;
+        font-weight: normal;
+        max-width: 525px;
+        width: 100%;
+        margin-bottom: 12px;
+        opacity: 0.8;
+        sup {
+            font-size: 12px;
+        }
+    }
+
+    // Form
+    &__wrp-form {
+        margin-bottom: 24px;
+    }
+    .input-email {
+        margin-right: 14px;
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(128, 137, 149, 0.2);
+        backdrop-filter: blur(4px);
+        height: 48px;
+        padding-right: 23px;
+        padding-left: 23px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #546171;
+        min-width: 306px;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #546171;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: #546171;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: #546171;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: #546171;
+        }
+    }
+    
+}
+// END Header
+
+/* Adaptive */
+@media screen and (max-width:1199px) {
+    .header__wrp-content {
+        padding: 0;
+    }
+    .header__title {
+        width: 100%;
+        max-width: 770px;
+    }
+    .header {
+        padding-top: 168px;
+        padding-bottom: 100px;
+        background: #F4F7FA url(../img/header-img-device_table.png) no-repeat bottom right;
+        background-position: 100% 82%;
+        background-size: 277px 476px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .header__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .header__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .header__wrp-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 408px;
+        .input-email {
+            margin-right: 0;
+            margin-bottom: 16px;
+            min-width: auto;
+        }
+        .btn-button.btn-yellow {
+            width: 100%;
+        }
+    }
+  
+}
+
+@media screen and (max-width:767px) {
+
+    .header {
+        background-position: 100% 82%;
+    }
+
+    .header__title {
+        font-size: 32px;
+        line-height: 120%;
+        max-width: 350px;
+        width: 100%;
+    }
+    .header__text {        
+        max-width: 265px;
+        width: 100%;
+    }
+    .header__wrp-form {
+        max-width: 350px;
+        width: 100%;
+    }
+    .header__text-under {
+        max-width: 350px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 8px;
+        sup {
+            font-size: 8px;
+        }
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .header {
+        padding-top: 105px;
+        padding-bottom: 50px;
+        background-position: 120% 50%;
+    }
+    .header__title {
+        margin-bottom: 16px;
+    }
+    .header__text {
+        margin-bottom: 48px;
+    }
+    .header__wrp-form .input-email {
+        height: 56px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .header {
+        background-size: 50%;
+        background-position: 142% 50%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .header__title {
+        font-size: 26px;
+    }
+    .header__title,
+    .header__text {
+        max-width: 230px;
+    }
+}
+/* END Adaptive */

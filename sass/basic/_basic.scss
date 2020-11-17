@@ -1,0 +1,33 @@
+// Basic
+body {
+	
+}
+p, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+h1, li {
+	font-family: 'Sansation';
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+}
+input {
+	font-family: 'Lato', sans-serif;
+}
+button {
+	font-family: 'Lato', sans-serif;
+}
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}

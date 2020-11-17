@@ -1,0 +1,17 @@
+// Abstracts
+@import "abstracts/variables";
+
+// Basic
+@import "basic/bootstrap";
+@import "basic/fonts";
+@import "basic/basic";
+
+// Components
+@import "сomponents/btns";
+@import "сomponents/title-text";
+@import "сomponents/menu";
+@import "сomponents/header";
+@import "сomponents/footer";
+
+// Pages
+@import "pages/main-page";

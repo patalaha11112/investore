@@ -1,0 +1,47 @@
+// Footer
+.footer {
+    background: $bg-white;
+    padding-top: 270px;
+    padding-bottom: 270px;
+    &__wrp-content {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 40px;
+        color: $text-black;        
+    }
+    &__text {
+        margin-bottom: 48px;
+        opacity: 0.6;
+    }
+}
+// END Footer
+
+/* Adaptive */
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {
+    .footer {
+        padding-top: 240px;
+        padding-bottom: 240px;
+    }
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+    .footer {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:320px) {}
+/* END Adaptive */

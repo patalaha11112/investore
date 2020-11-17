@@ -1,0 +1,41 @@
+// Title
+
+.section__title-h2 {
+    font-size: 140px;
+    text-align: center;
+    color: $text-black;
+    opacity: 0.04;
+    font-weight: bold;
+    line-height: 250px;
+}
+// END Title
+
+// Text
+.cards__text {
+    font-size: 16px;
+    line-height: 28px;
+    color: $text-black;
+    opacity: 0.8;    
+    sup {
+        font-size: 12px;
+    }
+}
+// Text
+
+@media screen and (max-width:991px) {
+    .section__title-h2 {
+        font-size: 96px;
+        line-height: 120px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .section__title-h2 {
+        font-size: 72px;
+        line-height: 84px;
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
+}
