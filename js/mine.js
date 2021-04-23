@@ -27,7 +27,7 @@ $(document).ready(function() {
       return false;
     });
   });
-  // END Smooth scroll
+// END Smooth scroll
 
 // Slider card product
 $(document).ready(function(){
@@ -104,3 +104,33 @@ $(document).ready(function(){
 	});
 });
 // END Slider card product
+
+// Accordion
+// Show More
+$(".account-content__portfolio-top").click(function () {
+	if($(".account-content__portfolio-content").hasClass("active")) {
+		$(this).text("Show portfolio");		
+	} else {
+		$(this).text("Hide portfolio");
+	}
+	$(".account-content__portfolio-top").toggleClass("active");
+	$(".account-content__portfolio-content").toggleClass("active");
+});
+
+// Color change for img svg
+$('img.img-svg').each(function(){
+	var $img = $(this);
+	var imgClass = $img.attr('class');
+	var imgURL = $img.attr('src');
+	$.get(imgURL, function(data) {
+	  var $svg = $(data).find('svg');
+	  if(typeof imgClass !== 'undefined') {
+		$svg = $svg.attr('class', imgClass+' replaced-svg');
+	  }
+	  $svg = $svg.removeAttr('xmlns:a');
+	  if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+		$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+	  }
+	  $img.replaceWith($svg);
+	}, 'xml');
+  });

@@ -33,11 +33,51 @@
         right: 7%;
         top: 39.58%;
         bottom: -10.42%;
-
         background: rgba(245, 166, 33, 0.3);
         filter: blur(30px);
         border-radius: 4px;
     }
+}
+
+// btn black
+.btn-black {
+    z-index: 5;
+    position: relative;
+    transition: 0.2s all;
+    border: 0;
+    display: inline-block;
+    background: $bg-black;
+    border-radius: 4px;
+    min-width: 232px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-white;
+    padding: 10px 20px;
+    line-height: 28px;
+    &:hover {
+        text-decoration: none;
+        color: $text-white;
+        background: #48586B;
+    }
+    &:active {
+        background: #1B2B3E;
+    }
+    &.btn-button {
+        min-width: 200px;
+    }
+    // &:before {
+    //     content: '';
+    //     z-index: 1;
+    //     position: absolute;
+    //     left: 7%;
+    //     right: 7%;
+    //     top: 39.58%;
+    //     bottom: -10.42%;
+    //     background: rgba(245, 166, 33, 0.3);
+    //     filter: blur(30px);
+    //     border-radius: 4px;
+    // }
 }
 .why__wrp-btn {
     .btn-yellow {
@@ -50,16 +90,25 @@
     .btn-yellow {
         width: 328px;
     }
+    .btn-black {
+        width: 328px;
+    }
 }
 
 @media screen and (max-width: 360px) {
     .btn-yellow {
         width: 100%;
     }
+    .btn-black {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:575px) {
     .btn-yellow {
+        padding: 14px 20px;
+    }
+    .btn-black {
         padding: 14px 20px;
     }
 }
