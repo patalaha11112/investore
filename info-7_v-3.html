@@ -15,31 +15,25 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Investore</title>
-
-    <style>
-        .header {
-            min-height: 100vh;
-        }
-    </style>
   </head>
   <body>
 
     <!-- Nav -->
-    <nav class="navigation-section">
+    <nav class="navigation-section navigation-section_black">
         <div class="navigation-section__container">
 
             <span class="btn-open" onclick="openNav()">
                 <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L17 1" stroke="#2B3B4E" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M1 6L17 6" stroke="#2B3B4E" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M1 11H17" stroke="#2B3B4E" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 1L17 1" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 6L17 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 11H17" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
                 </svg>                    
             </span>
 
             <!-- Logo -->
             <div class="navigation-section__logo">
                 <a class="navigation-section__logo-link" href="index.html">
-                    <img class="navigation-section__logo-img" src="img/logo@2x.png" alt="Investore">
+                    <img class="navigation-section__logo-img" src="img/logo_white@2x.png" alt="Investore">
                 </a>                
             </div>
             <!-- END Logo -->
@@ -49,17 +43,21 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 
                 <ul class="sidenav__ul">
-                    <li><a href="#">Basic Account</a></li>
-                    <li><a href="#">Model Portfolios</a></li>
-                    <li><a href="#">Learn more</a></li>
-                    <li><a href="#">Get early access</a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li>
+                    <li class="active"><a href="#">Your Account</a></li>
+                    <li><a href="#">Transfer Funds</a></li>
+                    <li class="dropdown last-li"><a href="#">Your information</a></li>                    
+                    <li class="btn-lang">
                         <a href="#">
                             <span class="img-wrp">
-                                <img src="img/icon-world-languages.png" alt="languages">
+                                <img src="img/icon-world-languages_white.png" alt="languages">
                             </span>
                             <span class="text-wrp">EN</span>
+                        </a>
+                    </li>
+                    <li class="avatar">
+                        <a href="#">
+                            Piter Malarkey
+                            <img src="img/account-avatar.png" alt="Avatar">
                         </a>
                     </li>
                 </ul>            
@@ -71,37 +69,30 @@
     </nav>
     <!-- END Nav -->
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="your-account.html">Your Account</a></li>
-                        <li><a href="account-profile.html">Account Profile</a></li>
-                        <li><a href="account-profile-selection.html">Account Profile Selection</a></li>
-                        <li><a href="info-1.html">Info Page 1</a></li>
-                        <li><a href="info-1_v-2.html">Info Page 1 (v.2)</a></li>
-                        <li><a href="info-2.html">Info 2</a></li>
-                        <li><a href="info-3.html">Info 3</a></li>
-                        <li><a href="info-3_v-2.html">Info 3 (v.2)</a></li>
-                        <li><a href="info-4.html">Info 4</a></li>
-                        <li><a href="info-5.html">Info 5</a></li>
-                        <li><a href="info-6.html">Info 6</a></li>
-                        <li><a href="info-7.html">Info 7</a></li>
-                        <li><a href="info-7_v-2.html">Info 7 (v.2)</a></li>
-                        <li><a href="info-7_v-2.1.html">Info 7 (v.2.1)</a></li>
-                        <li><a href="info-7_v-3.html">Info 7 (v.3)</a></li>
-                        <li><a href="info-7_v-3.1.html">Info 7 (v.3.1)</a></li>
-                        <li><a href="info-7_v-4.html">Info 7 (v.4)</a></li>
-                    </ul>                   
-                </div>                
-            </div>
-        </div>
-    </header>
-    <!-- END Header -->
+    <!-- Info content -->
+    <section class="info-content info-content_page-7-v-3">
+        <div class="info-content__container">
 
+            <!-- Title & Text -->
+            <div class="info-content__title-text-wrp">
+                <h1 class="info-h1">
+                    <a class="arrow" href="#">Who holds the funds in Digital Dollars?</a>
+                    <br>
+                    <img src="img/info/icon_dollar.svg" alt="Icon Dollar">
+                </h1>
+                <p class="info-text">Your funds in your digital dollar account are held in USDC. 
+                </p>
+                <p class="info-text"><span class="bold">USD Coin (USDC)</span> is a type of cryptocurrency that is referred to as a stablecoin. You can always redeem 1 USD Coin for US$1.00, giving it a stable price. USD Coin is managed by a consortium called Centre.</p>
+                <p class="info-text">Centre stablecoins are issued by regulated and licensed financial institutions that maintain full reserves of the equivalent fiat currency. Issuers are required to regularly report their USD reserve holdings, and Grant Thornton LLP issues reports on those holdings every month.</p>
+                <p class="info-text">The digital dollar account service is provided to Investore, Inc. through International Payments, Inc., a Money Service Business that uses third-party providers to deliver the service. Learn more about International Payments, Inc.
+                </p>
+                <p class="info-text"><a class="text-link" href="#">Learn more about Centre.</a></p>
+            </div>            
+            <!-- END Title & Text -->               
+
+        </div>
+    </section>
+    <!-- END Info content -->
 
 
 

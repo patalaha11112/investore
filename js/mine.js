@@ -117,6 +117,11 @@ $(".account-content__portfolio-top").click(function () {
 	$(".account-content__portfolio-content").toggleClass("active");
 });
 
+$(".info-content__country-top").click(function () {
+	$(".info-content__country-top").toggleClass("active");
+	$(".info-content__country-content").toggleClass("active");
+});
+
 // Color change for img svg
 $('img.img-svg').each(function(){
 	var $img = $(this);
